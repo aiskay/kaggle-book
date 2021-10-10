@@ -102,13 +102,6 @@ PackageOptions algorithm2e "lined, boxed"
 
 \begin_layout Title
 Sequential Model-based Global Optimization (SMBO) 
-\end_layout
-
-\begin_layout Title
-and Bayesian Optimization
-\end_layout
-
-\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -116,12 +109,14 @@ status open
 
 
 \backslash
-vspace*{-1cm}
+
+\backslash
+
 \end_layout
 
 \end_inset
 
-
+and Bayesian Optimization
 \end_layout
 
 \begin_layout Standard
@@ -679,13 +674,13 @@ Bayes の定理を用いて
 \end_inset
 
 が観測された元での
-\begin_inset Formula $\bm{y}^{*}$
+\begin_inset Formula $\bm{y}'$
 \end_inset
 
 の事後分布を求める
 \begin_inset Formula 
 \[
-p\left(\bm{y}^{*}|\bm{y}\right)=\frac{p(\bm{y},\bm{y}^{*})}{p(\bm{y})}
+p\left(\bm{y}'|\bm{y}\right)=\frac{p(\bm{y},\bm{y}')}{p(\bm{y})}
 \]
 
 \end_inset
@@ -736,7 +731,7 @@ y^{*}=\min\left(f(x_{i}),1\leq i\leq n\right),
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 btprint "btPrintCited"
-bibfiles "bayseian-optimization"
+bibfiles "smbo"
 options "style"
 
 \end_inset
